@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News App</title>
+    <link rel="icon" href="./assets/logo.png">
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav role="navigation">
+        <div class="main-nav container flex">
+          
+          <a href="#" onclick="reload()" class="channel-logo" aria-label="Reload News Homepage">
+            <img src="/assets/news.png" alt="News Channel Logo" />
+          </a>
+          
+          <div class="nav-links">
+            <ul class="flex" role="menubar">
+              <li>
+                <button class="hover-link nav-item"  id="ipl" onclick="onClickNavItem('ipl')">
+                  IPL
+                </button>
+              </li>
+              <li>
+                <button class="hover-link nav-item" id="finance" onclick="onClickNavItem('finance')">
+                  Finance
+                </button>
+              </li>
+              <li>
+                <button class="hover-link nav-item" id="politics" onclick="onClickNavItem('politics')">
+                  Politics
+                </button>
+              </li>
+              <li>
+                <button class="hover-link nav-item" id="technology" onclick="onClickNavItem('technology')">
+                  Technology
+                </button>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="search-bar flex">
+            <input type="text" id="search-input" class="search-input" placeholder="e.g. Bollywood" aria-label="Search for news"/>
+            <button id="search-button" class="search-button">Search</button>
+          </div>
+        
+        </div>
+      </nav>
+    </header>
+
+    
+    <div id="search-message" class="search-message" role="status"></div>
+
+
+    <main>
+      <div class="cards-container container flex" id="cards-container"></div>
+    </main>
+
+
+    <template id="template-news-card">
+      <div class="card" tabindex="0" role="button" aria-label="Open news article">
+      
+        <div class="card-header">
+          <img src="https://placehold.in/400x200/dark" alt="News image" id="news-img"/>
+        </div>
+        
+        <div class="card-content">
+          <h3 id="news-title">This is content</h3>
+          <h6 class="news-source" id="news-source">End Gadget • 30/3/2025</h6>
+          <p class="news-desc" id="news-desc">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe
+            consectetur omnis, facere ipsam consequatur rem pariatur nemo
+            explicabo illum tempora.
+          </p>
+        </div>
+      
+      </div>
+    </template>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
