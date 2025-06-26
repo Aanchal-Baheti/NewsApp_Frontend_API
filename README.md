@@ -1,4 +1,3 @@
-# NewsApp_Frontend_API
 # 📰 News Aggregator Web App
 
 A responsive, real-time news platform built using **JavaScript** and the **NewsAPI**. Users can search for news articles by keyword or browse curated categories like Sports, Technology, Health, and more. Articles are dynamically fetched and rendered with a clean, card-based UI.
